@@ -1,0 +1,107 @@
+/*Footer Section*/
+
+footer .container {
+    gap: 50px;
+    transition: var(--trans);
+    background-color: var(--blk-color);
+}
+
+footer .container span {
+    font-size: 35px;
+    color: var(--wt-color);
+}
+
+footer .container .icons {
+    gap: 40px !important;
+}
+
+footer .container .icons .icon {
+    font-size: 30px;
+    color: var(--wt-color);
+}
+
+footer .container .icons .icon:hover {
+    color: var(--main-color);
+}
+
+
+/*End Footer*/
+
+
+/*Start Responsive*/
+
+@media (max-width:1200px) {
+    /*Footer Section*/
+    footer .container {
+        gap: 45px;
+    }
+    footer .container span {
+        font-size: 28px;
+    }
+    footer .container .icons {
+        gap: 35px !important;
+    }
+    footer .container .icons .icon {
+        font-size: 28px;
+    }
+    /*End Footer*/
+}
+
+@media (max-width:992px) {
+    /*Footer Section*/
+    footer .container {
+        gap: 40px;
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer .container span {
+        font-size: 26px;
+        text-align: center;
+        justify-content: center !important;
+    }
+    footer .container .icons {
+        gap: 30px !important;
+        justify-content: center !important;
+    }
+    footer .container .icons .icon {
+        font-size: 26px;
+    }
+    /*End Footer*/
+}
+
+@media (max-width:768px) {
+    /*Footer Section*/
+    footer .container {
+        gap: 30px;
+    }
+    footer .container span {
+        font-size: 22px;
+    }
+    footer .container .icons {
+        gap: 20px !important;
+    }
+    footer .container .icons .icon {
+        font-size: 22px;
+    }
+    /*End Footer*/
+}
+
+@media (max-width:640px) {
+    /*Footer Section*/
+    footer .container {
+        gap: 20px;
+    }
+    footer .container span {
+        font-size: 20px;
+    }
+    footer .container .icons {
+        gap: 18px !important;
+    }
+    footer .container .icons .icon {
+        font-size: 20px;
+    }
+    /*End Footer*/
+}
+
+
+/*End Responsive*/

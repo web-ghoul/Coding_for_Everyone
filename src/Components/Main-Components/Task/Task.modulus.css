@@ -1,0 +1,200 @@
+/*Task Section*/
+
+.task .contain {
+    border-radius: 10px;
+    background-color: var(--wt-color);
+    box-shadow: var(--box);
+    transition: var(--trans);
+    grid-template-columns: 25% 75%;
+    overflow: hidden;
+    gap: 0;
+}
+
+.task .contain:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box1);
+}
+
+.task .contain .photo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.task .contain .photo picture img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.task .contain .content {
+    padding: 20px;
+    gap: 50px;
+}
+
+.task .contain:hover .content .quiz a {
+    color: var(--main-color);
+}
+
+.task .contain .content .quiz span {
+    font-size: 25px;
+}
+
+.task .contain .content .quiz a {
+    font-size: 20px;
+    text-decoration: underline;
+    transition: var(--trans);
+}
+
+.task .contain .content .quiz a:hover {
+    color: var(--main-color);
+}
+
+.task .contain .content .info {
+    font-size: 22px;
+    gap: 10px;
+}
+
+.task .contain .content .info div {
+    gap: 10px;
+}
+
+.task .contain .content .info div i svg {
+    color: var(--main-color);
+}
+
+
+/*End Task*/
+
+
+/*Start Responsive*/
+
+@media (max-width:1200px) {
+    /*Task Section*/
+    .task .contain .content {
+        padding: 20px;
+        gap: 45px;
+    }
+    .task .contain .content .quiz span {
+        font-size: 24px;
+    }
+    .task .contain .content .quiz a {
+        font-size: 20px;
+    }
+    .task .contain .content .info {
+        font-size: 22px;
+        gap: 10px;
+    }
+    .task .contain .content .info div {
+        gap: 10px;
+    }
+    /*End Task*/
+}
+
+@media (max-width:992px) {
+    /*Task Section*/
+    .task .contain {
+        border-radius: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        position: relative;
+    }
+    .task .contain:hover {
+        transform: translateY(-4px);
+    }
+    .task .contain .photo {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .task .contain .photo::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.75);
+    }
+    .task .contain .content {
+        padding: 30px;
+        gap: 40px;
+        z-index: 100;
+        position: relative;
+        color: var(--wt-color);
+    }
+    .task .contain .content .quiz span {
+        font-size: 22px;
+    }
+    .task .contain .content .quiz a {
+        font-size: 18px;
+        color: var(--wt-color);
+    }
+    .task .contain .content .info {
+        font-size: 20px;
+        gap: 8px;
+    }
+    .task .contain .content .info div {
+        gap: 8px;
+    }
+    /*End Task*/
+}
+
+@media (max-width:768px) {
+    /*Task Section*/
+    .task .contain {
+        border-radius: 8px;
+    }
+    .task .contain :hover {
+        transform: translateY(-3px);
+    }
+    .task .contain .content {
+        padding: 25px;
+        gap: 30px;
+    }
+    .task .contain .content .quiz span {
+        font-size: 18px;
+    }
+    .task .contain .content .quiz a {
+        font-size: 16px;
+        overflow-wrap: anywhere !important;
+    }
+    .task .contain .content .info {
+        font-size: 18px;
+        gap: 6px;
+    }
+    .task .contain .content .info div {
+        gap: 6px;
+    }
+    /*End Task*/
+}
+
+@media (max-width:640px) {
+    /*Task Section*/
+    .task .contain {
+        border-radius: 6px;
+    }
+    .task .contain .content {
+        padding: 12px;
+        gap: 20px;
+    }
+    .task .contain .contain .content .quiz span {
+        font-size: 16px;
+    }
+    .task .contain .content .quiz a {
+        font-size: 12px;
+    }
+    .task .contain .content .info {
+        font-size: 16px;
+        gap: 4px;
+    }
+    .task .contain .content .info div {
+        gap: 4px;
+    }
+    /*End Task*/
+}
+
+
+/*End Responsive*/

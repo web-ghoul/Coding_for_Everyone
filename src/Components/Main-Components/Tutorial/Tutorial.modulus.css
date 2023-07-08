@@ -1,0 +1,139 @@
+/*Tutorial Section*/
+
+.tutorial .contain {
+    gap: 50px;
+}
+
+.tutorial .contain .point .contain {
+    gap: 50px;
+}
+
+.tutorial .contain .point .contain .part .dot {
+    border: 2px solid var(--grey-color);
+    width: fit-content;
+    padding: 20px;
+}
+
+.tutorial .contain .part>.title span {
+    font-size: 26px;
+}
+
+.tutorial .contain .point .contain .part .dot>.title span {
+    font-size: 22px;
+}
+
+
+/* .tutorial .contain .point .contain .part .dots .dot picture img {
+    width: 80% !important;
+} */
+
+.tutorial .contain .download {
+    gap: 30px;
+}
+
+
+/*End Tutorial*/
+
+
+/*Start Responsive*/
+
+@media (max-width:1200px) {
+    /*Tutorial Section*/
+    .tutorial .contain {
+        gap: 45px;
+    }
+    .tutorial .contain .point .contain {
+        gap: 45px;
+    }
+    .tutorial .contain .point .contain .part .dots .dot picture img {
+        width: 75% !important;
+    }
+    .tutorial .contain .download {
+        gap: 27px;
+    }
+    /*End Tutorial*/
+}
+
+@media (max-width:992px) {
+    /*Tutorial Section*/
+    .tutorial .contain {
+        gap: 40px;
+    }
+    .tutorial .contain .point .contain {
+        gap: 40px;
+    }
+    .tutorial .contain .point .contain .part .dot {
+        padding: 15px;
+    }
+    .tutorial .contain .point .contain .part .dots .dot picture img {
+        width: 70% !important;
+    }
+    .tutorial .contain .download {
+        gap: 25px;
+    }
+    .tutorial .contain .part>.title span {
+        font-size: 24px;
+    }
+    .tutorial .contain .point .contain .part .dot>.title span {
+        font-size: 20px;
+    }
+    /*End Tutorial*/
+}
+
+@media (max-width:768px) {
+    /*Tutorial Section*/
+    .tutorial .contain {
+        gap: 30px;
+    }
+    .tutorial .contain .point .contain {
+        gap: 30px;
+    }
+    .tutorial .contain .point .contain .part .dots .dot {
+        padding: 10px;
+    }
+    .tutorial .contain .point .contain .part .dots .dot picture img {
+        width: 60% !important;
+    }
+    .tutorial .contain .download {
+        gap: 20px;
+    }
+    .tutorial .contain .part>.title span {
+        font-size: 22px;
+    }
+    .tutorial .contain .point .contain .part .dot>.title span {
+        font-size: 18px;
+    }
+    /*End Tutorial*/
+}
+
+@media (max-width:640px) {
+    /*Tutorial Section*/
+    .tutorial .contain {
+        gap: 20px;
+    }
+    .tutorial .contain .point .contain {
+        gap: 20px;
+    }
+    .tutorial .contain .point .contain .part picture img {
+        width: 80% !important;
+    }
+    .tutorial .contain .point .contain .part .dots .dot {
+        padding: 8px;
+    }
+    .tutorial .contain .point .contain .part .dots .dot picture img {
+        width: 80% !important;
+    }
+    .tutorial .contain .download {
+        gap: 15px;
+    }
+    .tutorial .contain .part>.title span {
+        font-size: 18px;
+    }
+    .tutorial .contain .point .contain .part .dot>.title span {
+        font-size: 16px;
+    }
+    /*End Tutorial*/
+}
+
+
+/*End Responsive*/

@@ -1,0 +1,251 @@
+/*Header Section*/
+
+header .container {
+    gap: 50px;
+    transition: var(--trans);
+    background-color: var(--blk-color);
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+header .container .logo a {
+    gap: 0px;
+}
+
+header .container .logo picture img {
+    width: 100px;
+}
+
+header .container .logo span {
+    font-size: 30px;
+    color: var(--wt-color);
+}
+
+header .container nav {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+}
+
+header .container nav ul {
+    gap: 50px;
+}
+
+header .container nav ul li a {
+    font-size: 22px;
+    color: var(--wt-color);
+    transition: var(--trans);
+}
+
+header .container nav ul li a:hover {
+    color: var(--main-color);
+}
+
+header .container .list {
+    display: none !important;
+}
+
+.header-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: var(--box);
+}
+
+.header-scroll .container {
+    box-shadow: var(--box);
+}
+
+
+/*End Header*/
+
+
+/*Start Responsive*/
+
+@media (max-width:1200px) {
+    /*Header Section*/
+    header .container {
+        gap: 45px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+    }
+    header .container .logo {
+        gap: 27px;
+    }
+    header .container .logo picture img {
+        width: 95px;
+    }
+    header .container .logo span {
+        font-size: 28px;
+    }
+    header .container nav ul {
+        gap: 45px;
+    }
+    header .container nav ul li a {
+        font-size: 20px;
+    }
+    /*End Header*/
+}
+
+@media (max-width:992px) {
+    /*Header Section*/
+    header .container {
+        gap: 40px;
+        padding-bottom: 7px;
+        padding-top: 7px;
+        /*List*/
+        position: relative;
+        /*List*/
+    }
+    header .container .logo {
+        gap: 20px;
+    }
+    header .container .logo picture img {
+        width: 80px;
+    }
+    header .container .logo span {
+        font-size: 25px;
+    }
+    /*List*/
+    header .container nav {
+        position: absolute;
+        width: 100%;
+        background-color: var(--blk-color);
+        display: flex;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        transition: var(--trans);
+        top: 100%;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 2px solid var(--alt-main-color);
+        visibility: hidden;
+        opacity: 0;
+    }
+    /*List*/
+    header .container nav ul {
+        gap: 40px;
+        /*List*/
+        width: 100%;
+        position: absolute;
+        display: grid;
+        align-items: center;
+        height: 100%;
+        gap: 0px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: stretch;
+        /*List*/
+    }
+    /*List*/
+    header .container nav ul li a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        position: relative;
+    }
+    header .container nav ul li a:before {
+        position: absolute;
+        content: "";
+        z-index: -1;
+        background-color: var(--main-color);
+        width: 100%;
+        height: 100%;
+        width: 100%;
+        transform: rotateY(90deg);
+        transition: var(--trans);
+    }
+    header .container nav ul li a:hover:before {
+        transform: rotateY(0);
+    }
+    header .container nav ul li a:hover {
+        color: var(--wt-color);
+    }
+    /*List*/
+    header .container nav ul li a {
+        font-size: 20px;
+    }
+    header .container .list {
+        display: flex !important;
+        font-size: 22px;
+        color: var(--wt-color);
+    }
+    /*End Header*/
+}
+
+@media (max-width:768px) {
+    /*Header Section*/
+    header .container {
+        gap: 20px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        justify-content: space-between !important;
+    }
+    header .container .logo {
+        gap: 10px;
+    }
+    header .container .logo picture img {
+        width: 60px;
+    }
+    header .container .logo span {
+        font-size: 20px;
+    }
+    /*List*/
+    header .container nav {
+        height: 150px;
+    }
+    /*List*/
+    header .container nav ul {
+        /*List*/
+        justify-content: center;
+        /*List*/
+    }
+    header .container nav ul li a {
+        font-size: 18px;
+        padding: 5px;
+    }
+    header .container .list {
+        font-size: 18px;
+    }
+    /*End Header*/
+}
+
+@media (max-width:640px) {
+    /*Header Section*/
+    header .container {
+        gap: 18px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        justify-content: space-between !important;
+    }
+    header .container .logo {
+        gap: 8px;
+    }
+    header .container .logo picture img {
+        width: 50px;
+    }
+    header .container .logo span {
+        font-size: 18px;
+    }
+    /*List*/
+    header .container nav {
+        height: 140px;
+    }
+    /*List*/
+    header .container nav ul li a {
+        font-size: 16px;
+        padding: 4px;
+    }
+    header .container .list {
+        font-size: 18px;
+    }
+    /*End Header*/
+}
+
+
+/*End Responsive*/

@@ -1,0 +1,167 @@
+/*Objective Section*/
+
+.objective {
+    gap: 30px;
+}
+
+.objective .title {
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+    width: fit-content;
+}
+
+.objective .title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    height: 4px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+}
+
+.objective .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: 4px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+}
+
+.objective ul {
+    gap: 20px;
+}
+
+.objective ul li {
+    font-size: 25px;
+    position: relative;
+    transition: var(--trans);
+    transform: translateX(30px);
+    font-weight: 500;
+}
+
+.objective ul li:hover {
+    cursor: pointer;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.objective ul li::before {
+    content: "";
+    background-color: var(--main-color);
+    position: absolute;
+    left: -30px;
+    width: 25px;
+    height: 5px;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*End Objective*/
+
+
+/*Start Responsive*/
+
+@media (max-width:1200px) {
+    /*Objective Section*/
+    .objective {
+        gap: 28px;
+    }
+    .objective .title {
+        font-size: 27px;
+    }
+    /*End Objective*/
+}
+
+@media (max-width:992px) {
+    /*Objective Section*/
+    .objective {
+        gap: 25px;
+    }
+    .objective .title {
+        font-size: 25px;
+    }
+    .objective .title::after {
+        height: 4px;
+        border-radius: 4px;
+    }
+    .objective .title::before {
+        height: 3px;
+        border-radius: 4px;
+    }
+    .objective ul {
+        gap: 18px;
+    }
+    .objective ul li {
+        font-size: 22px;
+        transform: translateX(4%);
+        transform: translateX(25px);
+    }
+    .objective ul li::before {
+        left: -25px;
+        width: 20px;
+        height: 4px;
+        border-radius: 4px;
+    }
+    /*End Objective*/
+}
+
+@media (max-width:768px) {
+    /*Objective Section*/
+    .objective {
+        gap: 20px;
+    }
+    .objective .title {
+        font-size: 20px;
+    }
+    .objective .title::after {
+        height: 2px;
+        border-radius: 3px;
+    }
+    .objective .title::before {
+        height: 2px;
+        border-radius: 2px;
+    }
+    .objective ul {
+        gap: 12px;
+    }
+    .objective ul li {
+        font-size: 18px;
+        transform: translateX(4%);
+        transform: translateX(20px);
+    }
+    .objective ul li::before {
+        left: -20px;
+        width: 8px;
+        height: 2px;
+        border-radius: 3px;
+    }
+    /*End Objective*/
+}
+
+@media (max-width:640px) {
+    /*Objective Section*/
+    .objective {
+        gap: 18px;
+    }
+    .objective .title {
+        font-size: 16px;
+    }
+    .objective ul {
+        gap: 10px;
+    }
+    .objective ul li {
+        font-size: 16px;
+    }
+    /*End Objective*/
+}
+
+
+/*End Responsive*/

@@ -1,0 +1,116 @@
+/* .topics .container {
+    gap: 80px;
+}
+
+.topics .search {
+    gap: 30px;
+}
+
+.topics .search .fields {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+} */
+
+.topics .container .boxes {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+}
+
+.topics .container .boxes .week {
+    background-color: var(--wt-color);
+    transition: var(--trans);
+    font-size: 20px;
+    border: 2px solid #eee;
+    gap: 20px;
+}
+
+.topics .container .boxes .week:hover {
+    cursor: pointer;
+    box-shadow: var(--box);
+    border-color: var(--main-color);
+}
+
+.topics .container .boxes .week .icon {
+    width: 100%;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.topics .container .boxes .week .icon img {
+    width: 100%;
+    position: absolute;
+    top: -25%;
+}
+
+.topics .container .boxes .week article {
+    gap: 20px;
+    padding: 20px;
+}
+
+.topics .container .boxes .week article .week-name {
+    font-size: 25px;
+}
+
+.topics .container .boxes .week article .winner-week {
+    font-size: 20px;
+}
+
+.topics .container .boxes .week article .winner-week span.pow {
+    color: var(--main-color);
+    font-weight: 800;
+}
+
+@media (max-width:992px) {
+    .topics .container .boxes {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 45px;
+    }
+    .topics .container .boxes .week {
+        font-size: 20px;
+        gap: 20px;
+    }
+    .topics .container .boxes .week .icon {
+        height: 140px;
+    }
+    .topics .container .boxes .week article {
+        gap: 20px;
+        padding: 20px;
+    }
+    .topics .container .boxes .week article .week-name {
+        font-size: 20px;
+    }
+    .topics .container .boxes .week article .week-num {
+        font-size: 20px;
+    }
+    .topics .container .boxes .week article .winner-week {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:768px) {
+    .topics .container .boxes {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 35px;
+    }
+    .topics .container .boxes .week {
+        font-size: 18px;
+        gap: 15px;
+    }
+    .topics .container .boxes .week .icon {
+        height: 120px;
+    }
+    .topics .container .boxes .week article {
+        gap: 15px;
+        padding: 15px;
+    }
+    .topics .container .boxes .week article .week-name {
+        font-size: 18px;
+    }
+    .topics .container .boxes .week article .week-num {
+        font-size: 18px;
+    }
+    .topics .container .boxes .week article .winner-week {
+        font-size: 16px;
+    }
+}

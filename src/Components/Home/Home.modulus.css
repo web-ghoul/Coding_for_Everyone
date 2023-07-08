@@ -1,0 +1,353 @@
+.home .container {
+    gap: 80px;
+}
+
+.home .container .pow .contain {
+    background-color: var(--wt-color);
+    box-shadow: var(--box1);
+    gap: 50px;
+    padding: 30px;
+    position: relative;
+}
+
+.home .container .pow .contain .info {
+    gap: 20px;
+}
+
+.home .container .pow .contain .info .name {
+    font-size: 30px;
+}
+
+.home .container .pow .contain .info .week {
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+.home .container .pow .contain .info .week span {
+    color: var(--main-color);
+}
+
+.home .container .pow .contain .progress-line {
+    position: absolute;
+    width: 90%;
+    background-color: #15e78c;
+    height: 10px;
+    bottom: 0;
+    left: 0;
+    border-radius: 100px 100px 0 0;
+    overflow: hidden;
+}
+
+.home .container .pow .contain .progress-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #00c16e;
+    transition: var(--trans);
+    animation-name: progress;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes progress {
+    100% {
+        height: 3000px;
+        width: 3000px;
+        opacity: .1;
+    }
+}
+
+.home .container .pow.winner .contain {
+    background-color: var(--alt-main-color);
+}
+
+.home .container .pow.winner .contain .info .week {
+    font-size: 25px;
+    color: var(--blk-color);
+}
+
+.home .container .pow.winner .contain .info .prog-of-week {
+    color: var(--wt-color);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.home .container .pow.winner .contain .info .name {
+    color: #111;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.home .container .pow.winner .contain picture,
+.home .container .pow.winner .contain picture img {
+    width: 300px;
+}
+
+.home .container .recent-week .contain {
+    gap: 50px;
+}
+
+.home .container .recent-week .contain .boxes {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 50px;
+}
+
+.home .container .recent-week .contain .boxes .week {
+    background-color: var(--wt-color);
+    transition: var(--trans);
+    font-size: 20px;
+    border: 2px solid #eee;
+    gap: 20px;
+}
+
+.home .container .recent-week .contain .boxes .week:hover {
+    cursor: pointer;
+    box-shadow: var(--box);
+    border-color: var(--main-color);
+}
+
+.home .container .recent-week .contain .boxes .week article {
+    padding: 20px;
+}
+
+.home .container .recent-week .contain .boxes .week article .week-name {
+    font-size: 25px;
+}
+
+.home .container .recent-week .contain .boxes .week article .winner-week {
+    font-size: 20px;
+}
+
+@media (max-width:1200px) {
+    .home .container {
+        gap: 70px;
+    }
+    .home .container .pow .contain {
+        gap: 40px;
+        padding: 25px;
+    }
+    .home .container .pow .contain .info {
+        gap: 18px;
+    }
+    .home .container .pow .contain .info .name {
+        font-size: 28px;
+    }
+    .home .container .pow .contain .info .week {
+        font-size: 18px;
+    }
+    .home .container .pow .contain .progress-line {
+        width: 50%;
+        height: 8px;
+        border-radius: 80px 80px 0 0;
+    }
+    .home .container .pow .contain .progress-line::after {
+        left: 0;
+        height: 90px;
+        width: 90px;
+    }
+    .home .container .pow.winner .contain .info .week {
+        font-size: 24px;
+    }
+    .home .container .pow.winner .contain .info .name {
+        font-size: 32px;
+    }
+    .home .container .pow.winner .contain .info .prog-of-week {
+        font-size: 35px;
+    }
+    .home .container .pow.winner .contain picture,
+    .home .container .pow.winner .contain picture img {
+        width: 280px;
+    }
+    .home .container .recent-week .contain {
+        gap: 45px;
+    }
+    .home .container .recent-week .contain .boxes {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 45px;
+    }
+    .home .container .recent-week .contain .boxes .week article {
+        padding: 18px;
+    }
+    .home .container .recent-week .contain .boxes .week article .week-name {
+        font-size: 24px;
+    }
+    .home .container .recent-week .contain .boxes .week article .winner-week {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:992px) {
+    .home .container {
+        gap: 60px;
+    }
+    .home .container .pow .contain {
+        gap: 30px;
+        padding: 20px;
+    }
+    .home .container .pow .contain .info {
+        gap: 15px;
+    }
+    .home .container .pow .contain .info .name {
+        font-size: 25px;
+    }
+    .home .container .pow .contain .info .week {
+        font-size: 16px;
+    }
+    .home .container .pow .contain .progress-line {
+        height: 7px;
+        border-radius: 70px 70px 0 0;
+    }
+    .home .container .pow .contain .progress-line::after {
+        height: 80px;
+        width: 80px;
+    }
+    .home .container .pow.winner .contain .info .week {
+        font-size: 22px;
+    }
+    .home .container .pow.winner .contain .info .name {
+        font-size: 30px;
+    }
+    .home .container .pow.winner .contain .info .prog-of-week {
+        font-size: 32px;
+    }
+    .home .container .pow.winner .contain picture,
+    .home .container .pow.winner .contain picture img {
+        width: 260px;
+    }
+    .home .container .recent-week .contain {
+        gap: 40px;
+    }
+    .home .container .recent-week .contain .boxes {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 40px;
+    }
+    .home .container .recent-week .contain .boxes .week article {
+        padding: 16px;
+    }
+    .home .container .recent-week .contain .boxes .week article .week-name {
+        font-size: 22px;
+    }
+    .home .container .recent-week .contain .boxes .week article .winner-week {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:768px) {
+    .home .container {
+        gap: 50px;
+    }
+    .home .container .pow .contain {
+        gap: 20px;
+        padding: 18px;
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .home .container .pow .contain .info {
+        gap: 12px;
+    }
+    .home .container .pow .contain .info .name {
+        font-size: 22px;
+    }
+    .home .container .pow .contain .info .week {
+        font-size: 12px;
+    }
+    .home .container .pow .contain .progress-line {
+        height: 6px;
+        border-radius: 50px 50px 0 0;
+    }
+    .home .container .pow .contain .progress-line::after {
+        height: 70px;
+        width: 70px;
+    }
+    .home .container .pow.winner .contain .info .week {
+        font-size: 20px;
+    }
+    .home .container .pow.winner .contain .info .name {
+        font-size: 30px;
+    }
+    .home .container .pow.winner .contain .info .prog-of-week {
+        font-size: 30px;
+    }
+    .home .container .pow.winner .contain picture,
+    .home .container .pow.winner .contain picture img {
+        width: 220px;
+    }
+    .home .container .recent-week .contain {
+        gap: 30px;
+        justify-content: stretch !important;
+    }
+    .home .container .recent-week .contain .boxes {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .home .container .recent-week .contain .boxes .week article {
+        padding: 12px;
+    }
+    .home .container .recent-week .contain .boxes .week article .week-name {
+        font-size: 20px;
+    }
+    .home .container .recent-week .contain .boxes .week article .winner-week {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:640px) {
+    .home .container {
+        gap: 40px;
+    }
+    .home .container .pow .contain {
+        gap: 15px;
+        padding: 15px;
+    }
+    .home .container .pow .contain .info {
+        gap: 10px;
+    }
+    .home .container .pow .contain .info .name {
+        font-size: 20px;
+    }
+    .home .container .pow .contain .info .week {
+        font-size: 10px;
+    }
+    .home .container .pow .contain .progress-line {
+        height: 5px;
+        border-radius: 40px 40px 0 0;
+    }
+    .home .container .pow .contain .progress-line::after {
+        height: 60px;
+        width: 60px;
+    }
+    .home .container .pow.winner .contain .info .week {
+        font-size: 18px;
+    }
+    .home .container .pow.winner .contain .info .name {
+        font-size: 25px;
+    }
+    .home .container .pow.winner .contain .info .prog-of-week {
+        font-size: 25px;
+    }
+    .home .container .pow.winner .contain picture,
+    .home .container .pow.winner .contain picture img {
+        width: 200px;
+    }
+    .home .container .recent-week .contain {
+        gap: 25px;
+    }
+    .home .container .recent-week .contain .boxes {
+        gap: 25px;
+    }
+    .home .container .recent-week .contain .boxes .week article {
+        padding: 10px;
+    }
+    .home .container .recent-week .contain .boxes .week article .week-name {
+        font-size: 18px;
+    }
+    .home .container .recent-week .contain .boxes .week article .winner-week {
+        font-size: 12px;
+    }
+}
